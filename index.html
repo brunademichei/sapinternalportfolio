@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bruna Demichei Nobre · UX Designer specializing in enterprise software, design systems, accessibility, and AI-assisted experiences." />
+  <meta name="author" content="Bruna Demichei Nobre" />
+  <title>Bruna Demichei Nobre · UX Designer</title>
+
+  <!-- Open Graph (for nice link previews when shared) -->
+  <meta property="og:title" content="Bruna Demichei Nobre · UX Designer" />
+  <meta property="og:description" content="User-centered design for enterprise software, design systems, accessibility, and AI-assisted experiences." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;✦&lt;/text&gt;&lt;/svg&gt;" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== Header / Nav ===== -->
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Primary">
+      <a href="#top" class="nav__brand" aria-label="Home · Bruna Demichei Nobre">
+        <span class="nav__mark" aria-hidden="true">✦</span>
+        <span class="nav__name">Bruna Demichei&nbsp;Nobre</span>
+      </a>
+
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#work">Case studies</a></li>
+        <li><a href="#events">Creative events</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Switch to dark theme" title="Toggle theme">
+            <span class="theme-toggle__icon" aria-hidden="true">◑</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ===== Hero ===== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__inner">
+        <p class="hero__eyebrow reveal">UX Designer · SAP SuccessFactors Payroll (USA)</p>
+        <h1 class="hero__title reveal" id="hero-title">
+          Hi, <span class="hero__photo"><img src="assets/bruna-headshot.jpg" alt="" /></span> I'm Bruna!
+        </h1>
+        <p class="hero__lede reveal">
+          A UX Designer passionate about human-centered design, digital experiences, and understanding
+          user behavior. I enjoy transforming insights into intuitive solutions through research,
+          collaboration, and product thinking, especially in technology and AI-driven environments.
+        </p>
+        <div class="hero__actions reveal">
+          <a class="btn btn--primary" href="#work">View my work</a>
+          <a class="btn btn--ghost" href="https://www.linkedin.com/in/bruna-demichei-nobre" target="_blank" rel="noopener">
+            LinkedIn ↗
+          </a>
+        </div>
+        <a class="hero__scroll reveal" href="#work" aria-label="Scroll to work">↓</a>
+      </div>
+    </section>
+
+    <!-- ===== Work / Case studies ===== -->
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="section__head section__head--center reveal">
+        <h2 class="section__title" id="work-title">Case studies</h2>
+        <p class="section__sub">Enterprise UX, user research, and end-to-end product design.</p>
+      </div>
+
+      <div class="grid grid--work">
+        <!-- Case study 1 -->
+        <a class="proj reveal" href="case-payroll-credentials.html">
+          <span class="proj__media"><img src="assets/cases/cred-finetuning.jpg" alt="SAP Fiori Fine-Tuning options list including credentials for third-party systems" loading="lazy" /></span>
+          <span class="proj__cat">SAP SuccessFactors · Enterprise web</span>
+          <h3 class="proj__title">Third-party credentials for payroll</h3>
+          <p class="proj__desc">Designed a clear setup flow so customers can register the BSI/TaxFactory credentials required for US tax calculation before using payroll.</p>
+        </a>
+
+        <!-- Case study 2 -->
+        <a class="proj reveal" href="case-work-tax-location.html">
+          <span class="proj__media"><img src="assets/cases/wtl-input.jpg" alt="Payroll Results Viewer showing tax input across multiple work locations" loading="lazy" /></span>
+          <span class="proj__cat">User research · AI-assisted prototyping</span>
+          <h3 class="proj__title">Work Tax Location user research</h3>
+          <p class="proj__desc">Led a usability study on a complex multi-location tax workflow, prototyped in Figma Make, surfacing a strong need for comparative tax views.</p>
+        </a>
+
+        <!-- Case study 3 -->
+        <a class="proj reveal" href="case-minha-jornada.html">
+          <span class="proj__media"><img src="assets/cases/mj-perfil.jpg" alt="Role selection screen from the Minha Jornada platform" loading="lazy" /></span>
+          <span class="proj__cat">Product design · Journey mapping</span>
+          <h3 class="proj__title">Minha Jornada platform</h3>
+          <p class="proj__desc">A centralized journey hub for AIESEC exchange participants and managers, from fragmented spreadsheets to a guided, end-to-end experience.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== Creative events ===== -->
+    <section class="section section--alt" id="events" aria-labelledby="events-title">
+      <div class="section__head section__head--center reveal">
+        <h2 class="section__title" id="events-title">Creative events</h2>
+        <p class="section__sub">Experiences I've designed and brought to life at SAP, where storytelling meets engagement.</p>
+      </div>
+
+      <div class="events">
+        <!-- Event 1 — End-of-Year Party -->
+        <article class="feature reveal">
+          <div class="feature__gallery gallery--trio">
+            <figure class="gphoto gphoto--a"><img src="assets/eoy-team.jpg" alt="Bruna and teammates posing with a Willy Wonka character at the SAP End-of-Year celebration" loading="lazy" /></figure>
+            <figure class="gphoto gphoto--b"><img src="assets/eoy-giftbox.jpg" alt="A giant red gift box on stage in front of a large seated audience at the SAP End-of-Year event" loading="lazy" /></figure>
+            <figure class="gphoto gphoto--c"><img src="assets/eoy-ticket.jpg" alt="Hand holding an ornate 'SAP and the Chocolate Factory' golden ticket" loading="lazy" /></figure>
+          </div>
+          <div class="feature__text">
+            <span class="feature__cat">Experience design · Internal engagement</span>
+            <h3>SAP End-of-Year Party</h3>
+            <p>
+              I designed and led an internal engagement experience for our End-of-Year celebration,
+              with an immersive "SAP &amp; the Chocolate Factory" theme. Using anticipation and storytelling,
+              I sparked curiosity and interaction across the office, showing how thoughtful experiences,
+              even simple ones, can create emotional connection, engagement, and a sense of relevance.
+            </p>
+          </div>
+        </article>
+
+        <!-- Event 2 — Developers League -->
+        <article class="feature feature--reverse reveal">
+          <div class="feature__gallery gallery--stack">
+            <figure class="gphoto"><img src="assets/devleague.jpg" alt="A crowd gathered around a stage under purple lighting at the SAP Labs Latin America Developers League" loading="lazy" /></figure>
+            <figure class="gphoto"><img src="assets/devleague-ai.jpg" alt="Large auditorium with a 'We are all in on AI' screen and blue stage lighting at the Developers League" loading="lazy" /></figure>
+            <figure class="gphoto"><img src="assets/devleague-dcom.jpg" alt="Purple-lit SAP d.com stage set against a wall of greenery at the Developers League" loading="lazy" /></figure>
+          </div>
+          <div class="feature__text">
+            <span class="feature__cat">Visual content · Event communication</span>
+            <h3>SAP Labs Latin America Developers League</h3>
+            <p>
+              I created the visual content for an internal tech event that brought together
+              <strong>1,100+ developers and engineers</strong> at SAP. The experience focused on
+              collaboration, innovation, and community engagement through creative storytelling,
+              event communication, and visually-driven interaction.
+            </p>
+            <a class="feature__link" href="https://www.linkedin.com/posts/dennison-john-ab6b56102_saplabsla-innovation-community-ugcPost-7313632985470148608-ONeY" target="_blank" rel="noopener">Watch the event video ↗</a>
+          </div>
+        </article>
+
+        <!-- Event 3 — Innoweeks -->
+        <article class="feature reveal">
+          <div class="feature__gallery gallery--duo">
+            <figure class="gphoto"><img src="assets/innoweeks-stage.jpg" alt="Speaker on stage in front of a large 'SAP Innoweeks 11th Edition' screen" loading="lazy" /></figure>
+            <figure class="gphoto"><img src="assets/innoweeks-crowd.jpg" alt="Audience seated facing a stage displaying enterprise client logos at SAP Innoweeks" loading="lazy" /></figure>
+          </div>
+          <div class="feature__text">
+            <span class="feature__cat">Design thinking · Client co-creation</span>
+            <h3>SAP Innoweeks 2025</h3>
+            <p>
+              I partnered with enterprise clients across Latin America, including WEG, SLC Agrícola,
+              Timenow, Grupo Innovasport, and Viña Concha y Toro, to understand business challenges,
+              identify user pain points, and explore opportunities for innovation.
+            </p>
+            <p>
+              Collaborating directly with stakeholders in discovery and co-creation sessions, I helped
+              translate qualitative insights into user-centered solution concepts, working within a
+              multidisciplinary team of designers, developers, project managers, and AI specialists
+              through an iterative design thinking approach.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Expertise ===== -->
+    <section class="section" id="expertise" aria-labelledby="expertise-title">
+      <div class="section__head section__head--center reveal">
+        <h2 class="section__title" id="expertise-title">What I bring to a team</h2>
+        <p class="section__sub">Across the full UX spectrum.</p>
+      </div>
+
+      <div class="grid grid--cards">
+        <article class="card reveal">
+          <span class="card__icon" aria-hidden="true">◎</span>
+          <h3>Interaction &amp; visual design</h3>
+          <p>End-to-end interaction design covering information architecture, interaction patterns, and polished UI that translates cleanly to code.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card__icon" aria-hidden="true">▤</span>
+          <h3>Design systems</h3>
+          <p>Building and contributing to UI components and documentation that keep products consistent and scalable.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card__icon" aria-hidden="true">◐</span>
+          <h3>Accessibility (WCAG)</h3>
+          <p>Accessibility-first design: contrast, keyboard navigation, semantic structure, and inclusive patterns from the start.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card__icon" aria-hidden="true">◇</span>
+          <h3>User research</h3>
+          <p>Interviews, surveys, and usability testing that translate findings into clear, defensible design decisions.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card__icon" aria-hidden="true">✦</span>
+          <h3>AI-assisted prototyping</h3>
+          <p>Using AI tools to rapidly build low- and high-fidelity prototypes, accelerating iteration and feedback cycles.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card__icon" aria-hidden="true">◈</span>
+          <h3>Responsible AI design</h3>
+          <p>Designing safe, trustworthy AI experiences by anticipating harms, embedding guardrails, and QA-ing AI output.</p>
+        </article>
+      </div>
+
+      <div class="tools reveal" aria-label="Tools and methods">
+        <ul class="chips">
+          <li>Figma</li>
+          <li>Sketch</li>
+          <li>Adobe XD</li>
+          <li>Prototyping</li>
+          <li>Design systems</li>
+          <li>Information architecture</li>
+          <li>Usability testing</li>
+          <li>Journey mapping</li>
+          <li>WCAG</li>
+          <li>Agile / Scrum</li>
+          <li>HTML / CSS</li>
+          <li>Responsive &amp; mobile-first</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Process ===== -->
+    <section class="section section--alt" id="process" aria-labelledby="process-title">
+      <div class="section__head section__head--center reveal">
+        <h2 class="section__title" id="process-title">My design process</h2>
+        <p class="section__sub">User-centered and data-informed, grounded in research and testing, not assumptions.</p>
+      </div>
+
+      <ol class="grid grid--process">
+        <li class="process__step reveal">
+          <span class="process__num">01</span>
+          <h3>Discover</h3>
+          <p>Understand users, business goals, and constraints through interviews, surveys, and stakeholder conversations.</p>
+        </li>
+        <li class="process__step reveal">
+          <span class="process__num">02</span>
+          <h3>Define</h3>
+          <p>Synthesize research into problems worth solving: journey maps, information architecture, and clear success criteria.</p>
+        </li>
+        <li class="process__step reveal">
+          <span class="process__num">03</span>
+          <h3>Design</h3>
+          <p>Explore solutions through user flows, wireframes, and prototypes, leveraging AI tools to iterate quickly.</p>
+        </li>
+        <li class="process__step reveal">
+          <span class="process__num">04</span>
+          <h3>Validate</h3>
+          <p>Test with users, refine with feedback, and partner with engineering to ship accessible, high-quality experiences.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="section__head section__head--center reveal">
+        <h2 class="section__title" id="about-title">About me</h2>
+      </div>
+      <div class="about__body reveal">
+        <p>
+          I'm a UX designer focused on enterprise software, where small design decisions ripple out to
+          thousands of people doing real work every day. At SAP SuccessFactors Payroll, I design user
+          flows, wireframes, mockups, and interactive prototypes that solve real problems and align with
+          business goals.
+        </p>
+        <p>
+          I work as an embedded member of a cross-functional Scrum team, partnering closely with Product
+          Managers and Engineers to validate feasibility and ship high-quality outcomes. I care deeply
+          about accessibility, design-system consistency, and grounding decisions in research rather than
+          assumptions.
+        </p>
+        <p>
+          Lately I've been designing AI-assisted experiences, including conversational flows and guided
+          interactions, with a strong emphasis on Responsible AI: anticipating harms, embedding guardrails, and making
+          AI reasoning transparent and trustworthy.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact__inner reveal">
+        <p class="contact__kicker">Like what you see?</p>
+        <h2 class="contact__title" id="contact-title">Let's connect!</h2>
+        <div class="contact__actions">
+          <a class="btn btn--primary" href="https://www.linkedin.com/in/bruna-demichei-nobre" target="_blank" rel="noopener">
+            LinkedIn ↗
+          </a>
+          <!-- Replace the placeholder email below with your preferred contact address. -->
+          <a class="btn btn--ghost" href="mailto:your.email@example.com">Email me</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>© <span id="year"></span> Bruna Demichei Nobre</p>
+      <p class="site-footer__meta">UX Designer · Designed &amp; built with accessibility in mind.</p>
+      <a href="#top" class="site-footer__top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
