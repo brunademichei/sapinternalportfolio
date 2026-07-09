@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Case study: a cross-functional discovery session mapping negative and retroactive taxable-earnings scenarios in US payroll, aligning devs, LPMs, and UX designers on expected behavior and a phased delivery." />
   <meta name="author" content="Bruna Demichei Nobre" />
-  <title>Bad Money / Good Money — Payroll discovery · Bruna Demichei Nobre</title>
+  <title>Bad Money / Good Money · Payroll discovery · Bruna Demichei Nobre</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -51,8 +51,8 @@
         <span class="case-hero__cat">Cross-functional discovery · Payroll</span>
         <h1 class="case-hero__title">Bad Money / Good Money</h1>
         <p class="case-hero__lede">
-          A cross-functional discovery session that untangled one of payroll's most confusing edge cases —
-          negative and retroactive taxable earnings — and aligned engineers, LPMs, and designers on the
+          A cross-functional discovery session that untangled one of payroll's most confusing edge cases
+          (negative and retroactive taxable earnings) and aligned engineers, LPMs, and designers on the
           expected behavior and a phased plan to deliver it.
         </p>
         <dl class="case-meta">
@@ -68,7 +68,7 @@
           <h2>Overview</h2>
           <p>
             "Bad money" is how the team refers to payroll scenarios that produce negative or retroactive
-            taxable earnings — an overpayment clawed back after a retroactive salary change, statutory
+            taxable earnings: an overpayment clawed back after a retroactive salary change, statutory
             deductions calculated on money the employee never actually received, a negative "to&nbsp;be&nbsp;paid"
             that reads like the employee owes the company. These are rare, high-stakes cases where the numbers
             stop being intuitive.
@@ -90,7 +90,7 @@
             "bad money" cases were understood differently by each discipline, so before any UI could be
             designed we needed a <strong>shared mental model</strong>: what the system <em>should</em> do,
             where it currently misleads people, and which parts are design problems versus engineering rules.
-            My job was to make that complexity visible and get the whole triad — dev, product, and design —
+            My job was to make that complexity visible and get the whole triad (dev, product, and design)
             aligned on the same picture.
           </p>
         </div>
@@ -108,7 +108,7 @@
 
         <div class="board reveal" role="img" aria-label="FigJam discovery board for the Bad Money / Good Money payroll session, including participants, use cases in scope, a scenario walkthrough, questions, agreed behavior, expected behavior insights, a delivery roadmap, and the good money insight.">
           <div class="board__bar">
-            <span class="board__bar-title">Bad Money / Good Money — Payroll discovery</span>
+            <span class="board__bar-title">Bad Money / Good Money · Payroll discovery</span>
             <span class="board__bar-tools" aria-hidden="true">
               <span class="board__tool"></span><span class="board__tool"></span><span class="board__tool"></span>
             </span>
@@ -144,7 +144,7 @@
             <!-- Scenario walkthrough -->
             <div class="board__group">
               <h3 class="board__head">The scenario we walked through</h3>
-              <p class="board__intro">An employee on a 10k USD monthly base salary (test employee 4258, tenant <code>Dev/XAllFeaturesEU10004</code>) whose salary is retroactively cut — the classic "bad money" trigger.</p>
+              <p class="board__intro">An employee on a 10k USD monthly base salary (test employee 4258, tenant <code>Dev/XAllFeaturesEU10004</code>) whose salary is retroactively cut, the classic "bad money" trigger.</p>
               <div class="flow">
                 <div class="flow__step"><span class="flow__n">1</span><p>EE with a monthly base salary of <strong>10k USD</strong>.</p></div>
                 <div class="flow__step"><span class="flow__n">2</span><p>Earns 10k USD in January 2026.</p></div>
@@ -168,16 +168,16 @@
               <div class="board__cols">
                 <div class="board__col board__col--pain">
                   <span class="board__col-title">Questions &amp; risks</span>
-                  <div class="note note--pink">A negative "to be paid" gives the impression the EE has to pay 6k USD. In payroll a negative result could be a refund — not true for this scenario either.</div>
-                  <div class="note note--pink">Statutory deductions on the 10k base salary were already paid — shouldn't the next pay periods be tax-free, or arrears be generated for statutory deductions?<span class="note__a"><b>A:</b> taxes aren't processed until the "to&nbsp;be&nbsp;paid" is positive.</span></div>
+                  <div class="note note--pink">A negative "to be paid" gives the impression the EE has to pay 6k USD. In payroll a negative result could be a refund, not true for this scenario either.</div>
+                  <div class="note note--pink">Statutory deductions on the 10k base salary were already paid; shouldn't the next pay periods be tax-free, or arrears be generated for statutory deductions?<span class="note__a"><b>A:</b> taxes aren't processed until the "to&nbsp;be&nbsp;paid" is positive.</span></div>
                   <div class="note note--pink">The OTP is treated as a supplemental payment, but this case likely needs a dedicated PCT (payroll calculation type).</div>
                   <div class="note note--pink">With a high pre-tax amount, how will it be calculated across regular and supplemental payments?</div>
-                  <div class="note note--pink">Will there be UX deliverables for Phase&nbsp;1 — an IPS footnote, an alert on the payroll dashboard? Any documentation for manually solving the issue?</div>
+                  <div class="note note--pink">Will there be UX deliverables for Phase&nbsp;1: an IPS footnote, an alert on the payroll dashboard? Any documentation for manually solving the issue?</div>
                 </div>
 
                 <div class="board__col board__col--ok">
                   <span class="board__col-title">Agreed behavior</span>
-                  <div class="note note--green">Taxes shouldn't be processed while the "to be paid" is negative — statutory deductions should be 0.</div>
+                  <div class="note note--green">Taxes shouldn't be processed while the "to be paid" is negative; statutory deductions should be 0.</div>
                   <div class="note note--green">Overpayments take higher priority than voluntary deductions (pre-tax / post-tax benefits) and would generate arrears depending on how the deductions are configured.</div>
                 </div>
 
@@ -201,9 +201,9 @@
 
             <!-- Good money -->
             <div class="board__group">
-              <h3 class="board__head">Good Money — the flip side</h3>
+              <h3 class="board__head">Good Money: the flip side</h3>
               <div class="board__row">
-                <div class="note note--purple">"Good money" is the opposite scenario: higher taxable amounts (bonuses, gifts). The employee receives a separate amount and the taxables increase because of it — a useful mirror for pressure-testing the same logic in the positive direction.</div>
+                <div class="note note--purple">"Good money" is the opposite scenario: higher taxable amounts (bonuses, gifts). The employee receives a separate amount and the taxables increase because of it, a useful mirror for pressure-testing the same logic in the positive direction.</div>
               </div>
             </div>
           </div>
@@ -221,8 +221,8 @@
             </p>
           </div>
           <p>
-            Just as importantly, the board surfaced the <em>design</em> questions early — where an alert,
-            an Interactive Pay Statement footnote, or supporting documentation would be needed — so UX work
+            Just as importantly, the board surfaced the <em>design</em> questions early (where an alert,
+            an Interactive Pay Statement footnote, or supporting documentation would be needed), so UX work
             could start from a place of clarity instead of guesswork.
           </p>
         </div>
