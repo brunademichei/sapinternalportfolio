@@ -136,6 +136,219 @@
 
       <section class="case-block reveal">
         <div class="prose">
+          <h2>The research report</h2>
+          <p>
+            I synthesized the whole study in a FigJam research report: objectives and success
+            criteria, a participant overview, every participant answer, and the pain points,
+            delights, and suggestions that came out of the sessions. Here are the highlights.
+          </p>
+        </div>
+
+        <div class="board reveal" role="img" aria-label="FigJam user research report board for the SFPAY PRV Proration study, including timeline, summary, objectives, participants, findings, participant quotes, and takeaways.">
+          <div class="board__bar">
+            <span class="board__bar-title">SFPAY PRV · Proration — User research report</span>
+            <span class="board__bar-tools" aria-hidden="true">
+              <span class="board__tool"></span><span class="board__tool"></span><span class="board__tool"></span>
+            </span>
+          </div>
+
+          <div class="board__canvas">
+            <!-- Timeline -->
+            <div class="board__group">
+              <h3 class="board__head">Timeline &amp; key dates</h3>
+              <ol class="board__timeline">
+                <li><em>01</em><b>Planning</b><span>May 2026</span></li>
+                <li><em>02</em><b>Recruitment</b><span>June 2026</span></li>
+                <li><em>03</em><b>Testing sessions</b><span>June 2026</span></li>
+                <li><em>04</em><b>Reporting &amp; handoff</b><span>June 2026</span></li>
+              </ol>
+            </div>
+
+            <!-- Summary + objectives -->
+            <div class="board__group">
+              <h3 class="board__head">Quick summary &amp; objectives</h3>
+              <div class="board__row">
+                <div class="note note--yellow">
+                  <span class="note__label">Quick summary</span>
+                  <span>This test evaluates how effectively the Payroll Results Viewer (PRV) handles the
+                  complexity of simultaneous multi-state withholding: whether users can understand how
+                  income is allocated across work locations and how tax credits are applied to the home
+                  state to prevent double taxation. We checked the usability of the PRV for confusion points.</span>
+                </div>
+                <div class="note note--purple">
+                  <span class="note__label">Objectives</span>
+                  <ul>
+                    <li>Identify friction points in the main navigation flow.</li>
+                    <li>Assess understanding of critical concepts (taxable amounts, allocations).</li>
+                    <li>Observe whether users complete validation tasks without assistance.</li>
+                    <li>Check whether multi-level popovers give clear, progressive access to information.</li>
+                    <li>Verify the message strip communicates the proration method (Calendar Days).</li>
+                  </ul>
+                </div>
+                <div class="note note--white">
+                  <span class="note__label">Success criteria</span>
+                  <ul>
+                    <li>&ge;80% success rate on key tasks</li>
+                    <li>&le;1 critical error per user</li>
+                    <li>Low dependence on support / moderation</li>
+                    <li>Qualitative feedback showing clarity in understanding the calculations</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Participants -->
+            <div class="board__group">
+              <h3 class="board__head">User profiles · 7 participants</h3>
+              <ul class="board__people">
+                <li class="person"><div class="person__top"><span class="person__avatar">1</span><span class="person__name">User 1</span></div><span class="person__role">Administrative · Director</span><span class="person__meta">Full-time · 51–200 employees</span></li>
+                <li class="person"><div class="person__top"><span class="person__avatar">2</span><span class="person__name">User 2</span></div><span class="person__role">Accounting · Manager</span><span class="person__meta">Full-time · 201–500 employees</span></li>
+                <li class="person"><div class="person__top"><span class="person__avatar">3</span><span class="person__name">User 3</span></div><span class="person__role">Administrative · Entry-level</span><span class="person__meta">Full-time · 10,001+ employees</span></li>
+                <li class="person"><div class="person__top"><span class="person__avatar">4</span><span class="person__name">User 4</span></div><span class="person__role">Human Resources · Director</span><span class="person__meta">Full-time · 10,001+ employees</span></li>
+                <li class="person"><div class="person__top"><span class="person__avatar">5</span><span class="person__name">User 5</span></div><span class="person__role">Human Resources · Manager</span><span class="person__meta">Full-time · 201–500 employees</span></li>
+                <li class="person"><div class="person__top"><span class="person__avatar">6</span><span class="person__name">User 6</span></div><span class="person__role">Human Resources · Entry-level</span><span class="person__meta">Full-time · 501–1000 employees</span></li>
+                <li class="person"><div class="person__top"><span class="person__avatar">7</span><span class="person__name">User 7</span></div><span class="person__role">Administrative · Senior</span><span class="person__meta">Full-time · 10,001+ employees</span></li>
+              </ul>
+            </div>
+
+            <!-- Findings -->
+            <div class="board__group">
+              <h3 class="board__head">Prototype results</h3>
+              <div class="board__cols">
+                <div class="board__col board__col--pain">
+                  <span class="board__col-title">Pain points</span>
+                  <div class="note note--pink">
+                    <strong>Multi-level popover goes unexplored.</strong> Most users stopped at the
+                    top-level number and never dug into the proration details, a false sense of completion.
+                  </div>
+                  <div class="note note--pink">
+                    <strong>Period comparison is broken.</strong> Users couldn't easily compare Jan vs.
+                    Feb because the layout doesn't support a side-by-side view. Some gave up; others were frustrated.
+                  </div>
+                </div>
+
+                <div class="board__col board__col--delight">
+                  <span class="board__col-title">Delights</span>
+                  <div class="note note--green">
+                    <strong>Layout builds confidence.</strong> Average self-rated understanding was high;
+                    even users who missed details felt capable. The visual structure is reassuring.
+                  </div>
+                  <div class="note note--green">
+                    <strong>Message strip for proration landed well.</strong> The majority noticed it and found it valuable.
+                  </div>
+                  <div class="note note--green">
+                    <strong>Allocation numbers were findable.</strong> 5 of 7 located both the NY allocation
+                    and the prorated amount, so the IA is discoverable at its core.
+                  </div>
+                </div>
+
+                <div class="board__col board__col--idea">
+                  <span class="board__col-title">Suggestions</span>
+                  <div class="note note--blue">
+                    <strong>Add a visual cue.</strong> A "See details" affordance so users know the top-level
+                    number is a doorway, not the full answer.
+                  </div>
+                  <div class="note note--blue">
+                    <strong>Add a period comparison view.</strong> The strongest user desire. Even a simple
+                    side-by-side Jan/Feb diff or a "What changed?" summary would resolve most of this.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- User answers -->
+            <div class="board__group">
+              <h3 class="board__head">User answers &middot; 7 participants &times; 5 questions</h3>
+              <p class="board__verbatim">Participant answers are shown verbatim, in the original language of the session.</p>
+              <div class="qa">
+                <div class="qa__item">
+                  <div class="qa__q"><span class="qa__num">Q1</span><p>Locate the allocation amount for regular wages in the New York (NY) location. Then, identify the corresponding prorated amount. Were you able to find both values? Describe where you found them and how you interpreted them.</p></div>
+                  <div class="qa__answers">
+                    <div class="qa__a qa__a--empty"><span class="qa__user">U1</span><span class="qa__na">No answer</span></div>
+                    <div class="qa__a"><span class="qa__user">U2</span>3.166,82 / 1.583,25</div>
+                    <div class="qa__a"><span class="qa__user">U3</span>I found them under the NY Work Location Allocation section. The amount allocated (~2k) is the percentage of the gross earning allocated to that location for tax purposes.</div>
+                    <div class="qa__a"><span class="qa__user">U4</span>The allocation was 50% to NY for the first pay period and 25% the second period. Meaning that fed taxes were paid at the NY rate for 50% of the period for the first check and 25% for the second check.</div>
+                    <div class="qa__a"><span class="qa__user">U5</span>NY work allocation has the regular wages has 4,750 then prorated to 1978.85 bacause the rest was earned in another state.</div>
+                    <div class="qa__a"><span class="qa__user">U6</span>Under NY Work Location Allocation - prorated amount is 1,978.85 and the regular wages base cumulation is 4,750. I interpret the NY amount to be prorated because he doesn’t live em NY but in CN.</div>
+                    <div class="qa__a"><span class="qa__user">U7</span>I clicked on calculations and selected the NY Allocation, then I selected regular and then I clicked on the amount on blue and it brought up the prorated amount.</div>
+                  </div>
+                  <div class="qa__note"><strong>Researcher note</strong> <span>Users did not seem to fully grasp or explore the multi-level popover. They appeared satisfied with the overall number and, as a result, missed some crucial proration details.</span></div>
+                </div>
+                <div class="qa__item">
+                  <div class="qa__q"><span class="qa__num">Q2</span><p>Rate your understanding of the allocations calculation shown on the prototype.</p><span class="qa__avg">avg 4.0<small>/5</small></span></div>
+                  <div class="qa__answers">
+                    <div class="qa__a qa__a--rating"><span class="qa__user">U1</span><span class="qa__rate">4 / 5</span></div>
+                    <div class="qa__a qa__a--rating"><span class="qa__user">U2</span><span class="qa__rate">4 / 5</span></div>
+                    <div class="qa__a qa__a--rating"><span class="qa__user">U3</span><span class="qa__rate">5 / 5</span></div>
+                    <div class="qa__a qa__a--rating"><span class="qa__user">U4</span><span class="qa__rate">3 / 5</span></div>
+                    <div class="qa__a qa__a--rating"><span class="qa__user">U5</span><span class="qa__rate">4 / 5</span></div>
+                    <div class="qa__a qa__a--rating"><span class="qa__user">U6</span><span class="qa__rate">4 / 5</span></div>
+                    <div class="qa__a qa__a--rating"><span class="qa__user">U7</span><span class="qa__rate">4 / 5</span></div>
+                  </div>
+                  <div class="qa__note"><strong>Researcher note</strong> <span>Even though they didn’t fully explore the popovers, they still felt confident in their answer. The layout gave the user a sense of confidence.</span></div>
+                </div>
+                <div class="qa__item">
+                  <div class="qa__q"><span class="qa__num">Q3</span><p>Could you find why the total tax amount may have increased for the February period, in comparison to the January period?</p></div>
+                  <div class="qa__answers">
+                    <div class="qa__a"><span class="qa__user">U1</span>No, there’s a lot of data here and it is hard to decipher and determine the increase and it’s cause.</div>
+                    <div class="qa__a"><span class="qa__user">U2</span>For february, the NY allocation was added, and for January it was not.</div>
+                    <div class="qa__a"><span class="qa__user">U3</span>I can’t find the information specifically, but it could change based on the tax rates in the areas in which you are working.</div>
+                    <div class="qa__a"><span class="qa__user">U4</span>Because Jan work may not have been performed in all of these locations and thus the tax rate may be higher in Feb.</div>
+                    <div class="qa__a"><span class="qa__user">U5</span>The taxes are higher in the area he worked in feb compared to jan.</div>
+                    <div class="qa__a"><span class="qa__user">U6</span>In Jan according to what I saw he was working in NJ for the entire period 100% of the time. One jurisdiction means less taxes as opposed to owing taxes in multiple jurisdictions like in Feb.</div>
+                    <div class="qa__a"><span class="qa__user">U7</span>The reason it was increased was because NY was added on the Feb payslip.</div>
+                  </div>
+                  <div class="qa__note"><strong>Researcher note</strong> <span>This was the most divisive question. Some users couldn’t fully understand the overall layout and therefore did not explore the multiple pages, resulting in frustration. They expressed a desire for an easier way to compare periods.</span></div>
+                </div>
+                <div class="qa__item">
+                  <div class="qa__q"><span class="qa__num">Q4</span><p>How confident are you in validating the payroll results based on this screen?</p><span class="qa__avg">avg 4.0<small>/5</small></span></div>
+                  <div class="qa__answers">
+                    <div class="qa__a qa__a--rating"><span class="qa__user">U1</span><span class="qa__rate">5 / 5</span></div>
+                    <div class="qa__a qa__a--rating"><span class="qa__user">U2</span><span class="qa__rate">5 / 5</span></div>
+                    <div class="qa__a qa__a--rating"><span class="qa__user">U3</span><span class="qa__rate">3 / 5</span></div>
+                    <div class="qa__a qa__a--rating"><span class="qa__user">U4</span><span class="qa__rate">3 / 5</span></div>
+                    <div class="qa__a qa__a--rating"><span class="qa__user">U5</span><span class="qa__rate">4 / 5</span></div>
+                    <div class="qa__a qa__a--rating"><span class="qa__user">U6</span><span class="qa__rate">4 / 5</span></div>
+                    <div class="qa__a qa__a--rating"><span class="qa__user">U7</span><span class="qa__rate">4 / 5</span></div>
+                  </div>
+                  <div class="qa__note"><strong>Researcher note</strong> <span>Good confidence rating from the users.</span></div>
+                </div>
+                <div class="qa__item">
+                  <div class="qa__q"><span class="qa__num">Q5</span><p>Review the explanation about proration. In your own words, explain what it means and how it applies in this scenario specifically.</p></div>
+                  <div class="qa__answers">
+                    <div class="qa__a"><span class="qa__user">U1</span>Money need to be withheld and prorated based on state law for the state income tax for where the individual lives and works. Did not read the message strip to get the answer*</div>
+                    <div class="qa__a"><span class="qa__user">U2</span>Proration goes based off calendar days and is an options that can tax earnings.</div>
+                    <div class="qa__a"><span class="qa__user">U3</span>It means that earning and deductions are prorated and allocated based on percentage of pay period and possible multiple locations.</div>
+                    <div class="qa__a"><span class="qa__user">U4</span>For the taxes owed in that period 50% of the taxable amount will be at the NY rate and same for NJ. For the following period the split is 25% and 75%</div>
+                    <div class="qa__a"><span class="qa__user">U5</span>that the days they worked are adjusted by the calendar days on the pay period and where they worked.</div>
+                    <div class="qa__a"><span class="qa__user">U6</span>It means the taxes are applied to the number of days you are in a jurisdiction. Going by number of calendar days, the proration goes up with the more days you are in a place.</div>
+                    <div class="qa__a"><span class="qa__user">U7</span>I don’t think it applies to what the issue is but from what it is saying I think it has a set amount it takes until it does its final deduction.</div>
+                  </div>
+                  <div class="qa__note"><strong>Researcher note</strong> <span>The majority of users noticed the message strip and found it valuable. It was a good implementation.</span></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Takeaways -->
+            <div class="board__group">
+              <h3 class="board__head">Takeaways</h3>
+              <div class="note note--white">
+                The prototype performed well overall: users felt confident navigating the screen and
+                responded positively to the proration message strip and the general layout. Most located
+                the key allocation numbers without guidance, so the information architecture is solid at its
+                core. The two clearest gaps are depth and comparison: users stopped at surface-level numbers
+                without realizing more detail lived in the popovers, and they couldn't compare January vs.
+                February because the layout doesn't support a cross-period view. The main opportunities
+                going forward: signal popover depth more explicitly and introduce a period comparison, even a
+                lightweight "what changed" view would address the most recurring need.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-block reveal">
+        <div class="prose">
           <h2>What we learned</h2>
           <div class="callout">
             <p>
