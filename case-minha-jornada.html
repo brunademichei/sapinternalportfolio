@@ -55,112 +55,178 @@
           fragmented operational process into a guided, transparent, end-to-end experience.
         </p>
         <dl class="case-meta">
-          <div><dt>My role</dt><dd>UX/UI design, journey mapping</dd></div>
+          <div><dt>My role</dt><dd>UX/UI design, journey mapping, IA</dd></div>
           <div><dt>Context</dt><dd>AIESEC in Brazil</dd></div>
           <div><dt>Users</dt><dd>Exchange participants &amp; managers</dd></div>
-          <div><dt>Focus</dt><dd>IA, navigation, progress visibility</dd></div>
+          <div><dt>Deliverables</dt><dd>Flows, wireframes, high-fidelity UI</dd></div>
         </dl>
       </header>
 
       <section class="case-block reveal">
         <div class="prose">
-          <h2>Overview</h2>
+          <h2>Use case</h2>
           <p>
-            The “Minha Jornada” platform was designed to improve the experience of exchange participants (EPs)
-            and managers throughout the AIESEC exchange journey within AIESEC in Brazil.
+            Minha Jornada was conceived as a shared platform for exchange participants (EPs) and their managers
+            to understand, manage, and complete the AIESEC exchange journey in Brazil.
           </p>
-          <p>
-            The primary challenge was the lack of visibility and structure across the end-to-end process.
-            Participants often felt uncertain about their progress and next steps, while managers struggled to
-            track engagement, communication, and overall journey status. Critical information was fragmented
-            across spreadsheets, chat channels, and multiple tools, resulting in a disconnected and
-            inconsistent experience.
-          </p>
+        </div>
+
+        <div class="case-grid case-grid--three">
+          <article class="case-card">
+            <span class="case-card__eyebrow">Objectives</span>
+            <h3>Create one guided journey</h3>
+            <ul>
+              <li>Give participants clarity about their current stage and next action.</li>
+              <li>Help managers monitor progress, engagement, and compliance.</li>
+              <li>Establish a shared source of truth across the exchange lifecycle.</li>
+            </ul>
+          </article>
+
+          <article class="case-card">
+            <span class="case-card__eyebrow">Pain points</span>
+            <h3>Fragmented information</h3>
+            <ul>
+              <li>Instructions and updates were spread across spreadsheets, chats, and other tools.</li>
+              <li>Participants lacked visibility into progress and ownership of next steps.</li>
+              <li>Managers relied on manual follow-up to understand each participant's status.</li>
+            </ul>
+          </article>
+
+          <article class="case-card">
+            <span class="case-card__eyebrow">Current experience</span>
+            <h3>Reactive and inconsistent</h3>
+            <ul>
+              <li>Participants pieced together information and asked managers for clarification.</li>
+              <li>Managers reconciled multiple sources before taking action.</li>
+              <li>Both roles navigated the same process without a consistent progress model.</li>
+            </ul>
+          </article>
         </div>
       </section>
 
       <section class="case-block reveal">
         <div class="prose">
-          <h2>The approach</h2>
+          <h2>Analyzing the current experience</h2>
           <p>
-            To address this, the platform was designed as a centralized journey hub, letting EPs and managers
-            follow each stage of the exchange process in a more structured, transparent, and intuitive way. The
-            experience focused on improving information architecture, simplifying navigation, and providing
-            clearer progress visibility throughout the user journey.
+            I mapped how information moved between participants, managers, spreadsheets, and communication
+            channels. The analysis showed that the experience was not failing at a single touchpoint: the main
+            issue was the absence of a connected journey.
           </p>
           <p>
-            My contribution focused on UX/UI design, journey mapping, and experience structuring, with a strong
-            emphasis on usability and engagement. The goal was to transform a fragmented operational process
-            into a guided, supportive experience, helping users feel informed, oriented, and connected
-            throughout the exchange lifecycle.
+            Each update created another moment of coordination. Participants needed to discover where
+            information lived, confirm what applied to them, and wait for guidance. Managers then had to
+            consolidate updates manually before they could identify who needed support.
           </p>
+        </div>
+
+        <ol class="journey-flow journey-flow--current">
+          <li>
+            <span class="journey-flow__number">1</span>
+            <strong>Find information</strong>
+            <span>Search across disconnected channels and files.</span>
+          </li>
+          <li>
+            <span class="journey-flow__number">2</span>
+            <strong>Ask for clarity</strong>
+            <span>Confirm the current stage and expected action.</span>
+          </li>
+          <li>
+            <span class="journey-flow__number">3</span>
+            <strong>Complete a task</strong>
+            <span>Act without a single end-to-end view.</span>
+          </li>
+          <li>
+            <span class="journey-flow__number">4</span>
+            <strong>Share an update</strong>
+            <span>Report progress through chat or a spreadsheet.</span>
+          </li>
+          <li>
+            <span class="journey-flow__number">5</span>
+            <strong>Reconcile status</strong>
+            <span>Managers consolidate sources and follow up.</span>
+          </li>
+        </ol>
+      </section>
+
+      <section class="case-block reveal">
+        <div class="prose">
+          <h2>Research &amp; discovery artifacts</h2>
+          <p>
+            The available project artifacts focused on understanding the operational journey and translating it
+            into a product structure. They created the foundation for the role-based experience and its
+            information architecture.
+          </p>
+        </div>
+
+        <div class="case-grid case-grid--three">
+          <article class="case-card case-card--artifact">
+            <span class="case-card__icon" aria-hidden="true">↳</span>
+            <h3>Current-state journey</h3>
+            <p>Mapped touchpoints, handoffs, repeated follow-ups, and gaps in progress visibility.</p>
+          </article>
+          <article class="case-card case-card--artifact">
+            <span class="case-card__icon" aria-hidden="true">◎</span>
+            <h3>Role &amp; needs mapping</h3>
+            <p>Separated participant guidance needs from managers' monitoring and operational needs.</p>
+          </article>
+          <article class="case-card case-card--artifact">
+            <span class="case-card__icon" aria-hidden="true">▤</span>
+            <h3>Information architecture</h3>
+            <p>Organized stages, status, tasks, and account information into one coherent experience.</p>
+          </article>
         </div>
       </section>
 
-      <!-- High fidelity -->
       <section class="case-block reveal">
         <div class="prose">
-          <h2>High-fidelity design</h2>
+          <h2>Proposed ideal experience</h2>
           <p>
-            The final design speaks to two audiences: a welcoming landing experience for participants and a
-            focused operational cockpit for managers. The longer screens scroll inside their frames.
+            The proposed flow brings both roles into one platform, then adapts the experience according to their
+            responsibilities. Participants receive guided next steps, while managers see the complete pipeline
+            and the items requiring attention.
           </p>
         </div>
 
-        <div class="shots">
-          <figure class="shot reveal">
-            <div class="browser browser--scroll">
-              <div class="browser__bar"><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__chip"></span><span class="scroll-hint">Scroll ↕</span></div>
-              <div class="browser__viewport"><img src="assets/cases/mj-landing-hifi.jpg" alt="High-fidelity landing page with the headline 'Cada passo é uma jornada', feature cards, testimonials, and a call to action" loading="lazy" /></div>
-            </div>
-            <figcaption>Landing page: “Cada passo é uma jornada.” Scroll to explore the full page.</figcaption>
-          </figure>
-
-          <div class="shots shots--two">
-            <figure class="shot reveal">
-              <div class="browser browser--scroll">
-                <div class="browser__bar"><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__dot"></span><span class="scroll-hint">Scroll ↕</span></div>
-                <div class="browser__viewport"><img src="assets/cases/mj-cx-dashboard.jpg" alt="Manager CX dashboard with compliance progress, EP pipeline by journey stage, and items needing attention" loading="lazy" /></div>
-              </div>
-              <figcaption>Manager (CX) dashboard: pipeline, compliance, and what needs attention.</figcaption>
-            </figure>
-
-            <figure class="shot reveal">
-              <div class="browser browser--scroll">
-                <div class="browser__bar"><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__dot"></span><span class="scroll-hint">Scroll ↕</span></div>
-                <div class="browser__viewport"><img src="assets/cases/mj-eps.jpg" alt="EP panel listing exchange participants with their destination, current journey stage, and progress" loading="lazy" /></div>
-              </div>
-              <figcaption>EP panel: each participant's destination, current stage, and progress.</figcaption>
-            </figure>
-          </div>
-
-          <div class="shots shots--two">
-            <figure class="shot reveal">
-              <div class="browser">
-                <div class="browser__bar"><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__chip"></span></div>
-                <div class="browser__viewport"><img src="assets/cases/mj-perfil.jpg" alt="Role selection screen asking 'Quem é você na jornada?' with Member and Exchange participant options" loading="lazy" /></div>
-              </div>
-              <figcaption>Role selection: the journey adapts to who you are.</figcaption>
-            </figure>
-
-            <figure class="shot reveal">
-              <div class="browser">
-                <div class="browser__bar"><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__chip"></span></div>
-                <div class="browser__viewport"><img src="assets/cases/mj-criar-conta.jpg" alt="Two-step account creation screen with password and local committee fields" loading="lazy" /></div>
-              </div>
-              <figcaption>Account creation: a short, clear two-step sign-up.</figcaption>
-            </figure>
-          </div>
-        </div>
+        <ol class="journey-flow journey-flow--ideal">
+          <li>
+            <span class="journey-flow__number">1</span>
+            <strong>Enter the platform</strong>
+            <span>Understand the value of Minha Jornada.</span>
+          </li>
+          <li>
+            <span class="journey-flow__number">2</span>
+            <strong>Select a role</strong>
+            <span>Choose participant or manager.</span>
+          </li>
+          <li>
+            <span class="journey-flow__number">3</span>
+            <strong>Create an account</strong>
+            <span>Provide only the information needed to start.</span>
+          </li>
+          <li>
+            <span class="journey-flow__number">4</span>
+            <strong>See a tailored dashboard</strong>
+            <span>Access role-specific status, tasks, and priorities.</span>
+          </li>
+          <li>
+            <span class="journey-flow__number">5</span>
+            <strong>Act on the next step</strong>
+            <span>Move forward with clear guidance and ownership.</span>
+          </li>
+          <li>
+            <span class="journey-flow__number">6</span>
+            <strong>Track shared progress</strong>
+            <span>Keep the journey visible in one place.</span>
+          </li>
+        </ol>
       </section>
 
-      <!-- Low fidelity -->
       <section class="case-block reveal">
         <div class="prose">
-          <h2>From wireframes to high fidelity</h2>
+          <h2>Low-fidelity prototypes</h2>
           <p>
-            The structure was defined first in low-fidelity, focusing on information architecture and flow
-            before any visual styling.
+            I explored the structure in low fidelity before defining visual details. The wireframes tested the
+            content hierarchy, entry points, and early role split while keeping iteration fast.
           </p>
         </div>
 
@@ -185,19 +251,76 @@
 
       <section class="case-block reveal">
         <div class="prose">
-          <h2>Outcome</h2>
+          <h2>High-fidelity prototype</h2>
+          <p>
+            The high-fidelity direction turns the journey model into a welcoming participant experience and a
+            focused operational cockpit for managers. The longer screens scroll inside their frames.
+          </p>
+        </div>
+
+        <div class="shots">
+          <figure class="shot reveal">
+            <div class="browser browser--scroll">
+              <div class="browser__bar"><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__chip"></span><span class="scroll-hint">Scroll ↕</span></div>
+              <div class="browser__viewport"><img src="assets/cases/mj-landing-hifi.jpg" alt="High-fidelity landing page with the headline 'Cada passo é uma jornada', feature cards, testimonials, and a call to action" loading="lazy" /></div>
+            </div>
+            <figcaption>Landing page: “Cada passo é uma jornada.” Scroll to explore the full page.</figcaption>
+          </figure>
+
+          <div class="shots shots--two">
+            <figure class="shot reveal">
+              <div class="browser browser--scroll">
+                <div class="browser__bar"><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__dot"></span><span class="scroll-hint">Scroll ↕</span></div>
+                <div class="browser__viewport"><img src="assets/cases/mj-cx-dashboard.jpg" alt="Manager CX dashboard with compliance progress, EP pipeline by journey stage, and items needing attention" loading="lazy" /></div>
+              </div>
+              <figcaption>Manager dashboard: pipeline, compliance, and what needs attention.</figcaption>
+            </figure>
+
+            <figure class="shot reveal">
+              <div class="browser browser--scroll">
+                <div class="browser__bar"><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__dot"></span><span class="scroll-hint">Scroll ↕</span></div>
+                <div class="browser__viewport"><img src="assets/cases/mj-eps.jpg" alt="EP panel listing exchange participants with their destination, current journey stage, and progress" loading="lazy" /></div>
+              </div>
+              <figcaption>Participant panel: destination, current stage, and progress in one view.</figcaption>
+            </figure>
+          </div>
+
+          <div class="shots shots--two">
+            <figure class="shot reveal">
+              <div class="browser">
+                <div class="browser__bar"><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__chip"></span></div>
+                <div class="browser__viewport"><img src="assets/cases/mj-perfil.jpg" alt="Role selection screen asking 'Quem é você na jornada?' with Member and Exchange participant options" loading="lazy" /></div>
+              </div>
+              <figcaption>Role selection: the journey adapts to who the user is.</figcaption>
+            </figure>
+
+            <figure class="shot reveal">
+              <div class="browser">
+                <div class="browser__bar"><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__chip"></span></div>
+                <div class="browser__viewport"><img src="assets/cases/mj-criar-conta.jpg" alt="Two-step account creation screen with password and local committee fields" loading="lazy" /></div>
+              </div>
+              <figcaption>Account creation: a short, clear two-step sign-up.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-block reveal">
+        <div class="prose">
+          <h2>Takeaways</h2>
           <div class="callout">
             <p>
-              <strong>Minha Jornada replaced a fragmented, spreadsheet-driven process with a single,
-              guided platform.</strong> Participants and managers now share one end-to-end view of the
-              exchange journey, with the interface adapting to each role.
+              <strong>The strongest opportunity was not another isolated tool, but a shared model of the
+              journey.</strong> Centralizing progress, ownership, and next steps creates a more supportive
+              experience for participants and a more actionable view for managers.
             </p>
           </div>
-          <p>
-            The design gave participants a clear, step-by-step path through their exchange, and gave managers
-            an operational cockpit to track pipeline, compliance, and what needs attention, so the whole
-            journey is visible in one place instead of scattered across tools.
-          </p>
+          <ul>
+            <li><strong>Design the journey before the screens:</strong> mapping stages and handoffs exposed the systemic problem.</li>
+            <li><strong>Use one progress model, adapt the interface:</strong> both roles need shared status but different actions.</li>
+            <li><strong>Structure before styling:</strong> low-fidelity work clarified hierarchy and navigation early.</li>
+            <li><strong>Next step:</strong> validate the flow with participants and managers, then refine language, priorities, and edge cases.</li>
+          </ul>
         </div>
       </section>
 
