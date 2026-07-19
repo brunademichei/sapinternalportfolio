@@ -104,12 +104,12 @@ body {
 }
 .s-title {
   font-family: var(--font-display);
-  font-weight: 800;
-  line-height: 1.05;
-  letter-spacing: -0.03em;
-  font-size: clamp(2rem, 4.6vw, 3.4rem);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  font-size: clamp(1.65rem, 3.2vw, 2.5rem);
 }
-.s-title--xl { font-size: clamp(2.6rem, 7vw, 5rem); }
+.s-title--xl { font-size: clamp(2.3rem, 5.2vw, 3.8rem); letter-spacing: -0.03em; }
 .s-lede {
   margin-top: 1.2rem;
   max-width: 64ch;
@@ -164,7 +164,7 @@ body {
 .divider__num {
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: clamp(4rem, 16vw, 11rem);
+  font-size: clamp(2.6rem, 7.5vw, 5rem);
   line-height: 0.9;
   letter-spacing: -0.05em;
   background: linear-gradient(120deg, var(--accent), var(--accent-2));
@@ -172,8 +172,8 @@ body {
 }
 .divider__title {
   font-family: var(--font-display);
-  font-weight: 800;
-  font-size: clamp(2rem, 5vw, 3.6rem);
+  font-weight: 700;
+  font-size: clamp(1.7rem, 3.8vw, 2.7rem);
   letter-spacing: -0.03em;
   margin-top: 0.4rem;
 }
@@ -507,8 +507,8 @@ body {
 .closing { text-align: center; }
 .closing__title {
   font-family: var(--font-display);
-  font-weight: 800;
-  font-size: clamp(3rem, 10vw, 7rem);
+  font-weight: 700;
+  font-size: clamp(2.3rem, 5.5vw, 3.8rem);
   line-height: 1;
   letter-spacing: -0.04em;
   background: linear-gradient(100deg, var(--accent), var(--accent-2));
@@ -652,6 +652,7 @@ body {
   @page { size: 1280px 720px; margin: 0; }
   html, body { overflow: visible; height: auto; background: #fff; }
   .deck__progress, .deck__topbar, .deck__nav, .hint { display: none !important; }
+  .slide--glow::before { display: none !important; }
   .deck { position: static; }
   .slide {
     position: relative;
@@ -668,6 +669,12 @@ body {
   }
   .slide .anim { opacity: 1 !important; transform: none !important; }
   .shot__img img { max-height: 34vh; }
+  /* gradient text-clip ghosts as a filled box in print; use solid color */
+  .divider__num, .metric__num, .mark {
+    background: none !important;
+    -webkit-text-fill-color: var(--accent) !important;
+    color: var(--accent) !important;
+  }
 }
 
 /* Body class toggled during PDF capture so all slides stack/paint */
