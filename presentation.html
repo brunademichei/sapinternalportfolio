@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UX Case Studies · Bruna Demichei Nobre</title>
+  <meta name="description" content="Two UX case studies by Bruna Demichei Nobre: US Setup Landscape with BSI (SAP SuccessFactors Payroll) and the Minha Jornada Platform (AIESEC)." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="presentation.css" />
+  <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;✦&lt;/text&gt;&lt;/svg&gt;" />
+</head>
+<body>
+  <div class="deck__progress" id="progress"></div>
+
+  <!-- ===== Top bar ===== -->
+  <div class="deck__topbar">
+    <a class="deck__brand" href="index.html" title="Back to portfolio">
+      <span class="mk">✦</span> <span class="hide-sm">Bruna Demichei Nobre</span>
+    </a>
+    <div class="deck__tools">
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme" title="Toggle light / dark">◑</button>
+      <button class="icon-btn" id="fs-btn" aria-label="Toggle fullscreen" title="Fullscreen (F)">⤢</button>
+    </div>
+  </div>
+
+  <!-- ===== Deck ===== -->
+  <main class="deck" id="deck">
+
+    <!-- 1 · COVER -->
+    <section class="slide slide--glow is-active" aria-label="Cover">
+      <div class="slide__inner cover">
+        <p class="eyebrow anim" style="--i:0">✦ UX Case Studies · 2026</p>
+        <h1 class="s-title s-title--xl anim" style="--i:1">Designing <span class="mark">clarity</span> into complex systems</h1>
+        <p class="s-lede anim" style="--i:2">Two case studies on turning tangled, high-stakes workflows into guided, trustworthy experiences.</p>
+        <div class="cover__meta anim" style="--i:3">
+          <span>Bruna Demichei Nobre</span>
+          <span>UX Designer</span>
+          <span>SAP SuccessFactors Payroll · USA</span>
+        </div>
+        <div class="cover__cases">
+          <div class="cover__case anim" style="--i:4">
+            <span class="cover__case-num">01</span>
+            <span>
+              <span class="cover__case-t">US Setup Landscape with BSI</span><br>
+              <span class="cover__case-s">SAP SuccessFactors Payroll · Enterprise UX</span>
+            </span>
+          </div>
+          <div class="cover__case anim" style="--i:5">
+            <span class="cover__case-num">02</span>
+            <span>
+              <span class="cover__case-t">Minha Jornada Platform</span><br>
+              <span class="cover__case-s">AIESEC Brazil · Journey design</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 · AGENDA -->
+    <section class="slide" aria-label="Agenda">
+      <div class="slide__inner">
+        <div class="head">
+          <p class="kicker anim" style="--i:0">Agenda</p>
+          <h2 class="s-title anim" style="--i:1">What we'll cover</h2>
+        </div>
+        <div class="cards cards--2">
+          <div class="tile anim" style="--i:2">
+            <span class="tile__eyebrow">Case 01 · Enterprise</span>
+            <h3>US Setup Landscape with BSI</h3>
+            <p>A compliance "hard gate" in SAP SuccessFactors Payroll — redesigned from zero to one so first-time setup feels discoverable and trustworthy.</p>
+          </div>
+          <div class="tile anim" style="--i:3">
+            <span class="tile__eyebrow">Case 02 · Product</span>
+            <h3>Minha Jornada Platform</h3>
+            <p>A fragmented AIESEC exchange journey turned into one guided hub for participants and managers — designed and prototyped with AI.</p>
+          </div>
+        </div>
+        <p class="s-note anim" style="--i:4;margin-top:1.4rem">Use the arrow keys (← →) or the controls below to move through the deck.</p>
+      </div>
+    </section>
+
+    <!-- 3 · CASE 1 DIVIDER -->
+    <section class="slide slide--glow" data-section aria-label="Case 1">
+      <div class="slide__inner divider">
+        <div class="divider__num anim" style="--i:0">01</div>
+        <h2 class="divider__title anim" style="--i:1">US Setup Landscape with BSI</h2>
+        <p class="divider__sub anim" style="--i:2">SAP SuccessFactors Payroll (USA) · Enterprise UX</p>
+      </div>
+    </section>
+
+    <!-- 4 · CONTEXT -->
+    <section class="slide" aria-label="Context">
+      <div class="slide__inner slide__inner--wide">
+        <div class="head">
+          <p class="kicker anim" style="--i:0">Case 01 · Context</p>
+          <h2 class="s-title anim" style="--i:1">Where this lives</h2>
+        </div>
+        <div class="cards">
+          <div class="tile anim" style="--i:2">
+            <div class="tile__icon">▣</div>
+            <h3>The product</h3>
+            <p>SAP SuccessFactors Payroll (USA) — a cloud platform for low-to-mid organizations, built from zero. US payroll is complex and requirement-heavy.</p>
+          </div>
+          <div class="tile anim" style="--i:3">
+            <div class="tile__icon">◇</div>
+            <h3>The team</h3>
+            <p>SFPAY, a Scrum team of three squads (Dana, Denali, Logan). In 2026 we entered an acceleration phase — scopes and deadlines far less negotiable: deliver more with less effort.</p>
+          </div>
+          <div class="tile anim" style="--i:4">
+            <div class="tile__icon">✎</div>
+            <h3>My role</h3>
+            <p>As UX Designer I turn complex business rules and user needs into flows, interaction models and hi-fi UI aligned with SAP Fiori. I join Agile ceremonies and file usability tickets.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 · THE CASE & CHALLENGE -->
+    <section class="slide" aria-label="The case and the challenge">
+      <div class="slide__inner slide__inner--wide">
+        <div class="split">
+          <div class="split__text">
+            <p class="kicker anim" style="--i:0">Case 01 · The case</p>
+            <h2 class="s-title anim" style="--i:1">A gate before anything else</h2>
+            <p class="s-lede anim" style="--i:2">Before performing any activity — even hiring — a customer must register their BSI credentials. Payroll depends on BSI for tax calculation, jurisdiction determination and forms processing, so SFPAY simply cannot be used until this setup is complete. The settings are metadata-driven, so the relevant data is already pre-configured at first login.</p>
+          </div>
+          <div class="split__media">
+            <div class="tile anim" style="--i:3">
+              <span class="tile__eyebrow">The challenge</span>
+              <h3>Make a compliance task feel human</h3>
+              <ul>
+                <li><strong>Hard gate:</strong> nothing in payroll works until it's done.</li>
+                <li><strong>Discoverable:</strong> a back-office task that's easy to find and start.</li>
+                <li><strong>Trustworthy:</strong> clear feedback on what's saved, active, and pending.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 · LOW-FI -->
+    <section class="slide" aria-label="Low fidelity exploration">
+      <div class="slide__inner slide__inner--wide">
+        <div class="head">
+          <p class="kicker anim" style="--i:0">Case 01 · Explore</p>
+          <h2 class="s-title anim" style="--i:1">First exploration — low-fidelity</h2>
+          <p class="s-lede anim" style="--i:2">A multi-step wizard: enter credentials, test them, and review everything in one list.</p>
+        </div>
+        <div class="shots shots--3">
+          <figure class="shot anim" style="--i:3">
+            <div class="shot__bar"><i></i><i></i><i></i><span>Step · Manage credential</span></div>
+            <div class="shot__img"><img src="assets/pitch/c1-lofi-manage.png" alt="Low-fi wireframe: manage credential form"></div>
+            <figcaption class="shot__cap">Enter the BSI credential details.</figcaption>
+          </figure>
+          <figure class="shot anim" style="--i:4">
+            <div class="shot__bar"><i></i><i></i><i></i><span>Step · Test credential</span></div>
+            <div class="shot__img"><img src="assets/pitch/c1-lofi-test.png" alt="Low-fi wireframe: test credentials"></div>
+            <figcaption class="shot__cap">Validate before committing.</figcaption>
+          </figure>
+          <figure class="shot anim" style="--i:5">
+            <div class="shot__bar"><i></i><i></i><i></i><span>Overview · List</span></div>
+            <div class="shot__img"><img src="assets/pitch/c1-lofi-list.png" alt="Low-fi wireframe: credentials overview list"></div>
+            <figcaption class="shot__cap">Review and edit each step.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7 · HI-FI FIRST -->
+    <section class="slide" aria-label="First high fidelity">
+      <div class="slide__inner slide__inner--wide">
+        <div class="head">
+          <p class="kicker anim" style="--i:0">Case 01 · Refine</p>
+          <h2 class="s-title anim" style="--i:1">First high-fidelity attempt</h2>
+          <p class="s-lede anim" style="--i:2">A guided 4-step creation wizard plus a managed list with status and an activation log — fully in SAP Fiori.</p>
+        </div>
+        <div class="shots shots--2">
+          <figure class="shot anim" style="--i:3">
+            <div class="shot__bar"><i></i><i></i><i></i><span>New Credential · Wizard</span></div>
+            <div class="shot__img"><img src="assets/pitch/c1-hifi-wizard.png" alt="High-fi credential creation wizard"></div>
+            <figcaption class="shot__cap">Identification → TaxFactory → TaxProfileFactory → Connection.</figcaption>
+          </figure>
+          <figure class="shot anim" style="--i:4">
+            <div class="shot__bar"><i></i><i></i><i></i><span>Credentials · List</span></div>
+            <div class="shot__img"><img src="assets/pitch/c1-hifi-list.png" alt="High-fi credentials list with status"></div>
+            <figcaption class="shot__cap">Status, versions and activation log per credential.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8 · PIVOT -->
+    <section class="slide" aria-label="The pivot">
+      <div class="slide__inner slide__inner--wide">
+        <div class="head">
+          <p class="kicker anim" style="--i:0">Case 01 · The turning point</p>
+          <h2 class="s-title anim" style="--i:1">A constraint reshaped the design</h2>
+          <p class="s-lede anim" style="--i:2">Talking to developers and external BSI stakeholders turned a heavy build into a single action.</p>
+        </div>
+        <div class="pivot">
+          <div class="pivot__col anim" style="--i:3">
+            <h3>From — create in-app</h3>
+            <p>Rich, multi-step screens to create, test and manage credentials directly inside SFPAY. Costly and complex on the backend — and too heavy for a user's very first step.</p>
+          </div>
+          <div class="pivot__arrow anim" style="--i:4">→</div>
+          <div class="pivot__col pivot__col--to anim" style="--i:5">
+            <h3>To — activate, don't create</h3>
+            <p>Credentials are registered through a form <em>outside</em> the system. When the user logs in to SFPAY, they only need to <strong>activate</strong> the credential. Simpler backend, simpler first step.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9 · REDESIGN: one place -->
+    <section class="slide" aria-label="Redesign entry">
+      <div class="slide__inner slide__inner--wide">
+        <div class="head">
+          <p class="kicker anim" style="--i:0">Case 01 · Redesign</p>
+          <h2 class="s-title anim" style="--i:1">One clear place to configure</h2>
+          <p class="s-lede anim" style="--i:2">A single "Configure Communication with Third-Party Systems" entry lists each system with an explicit status — so first-time users always know where to go and what's pending.</p>
+        </div>
+        <div class="shots shots--2">
+          <figure class="shot anim" style="--i:3">
+            <div class="shot__bar"><i></i><i></i><i></i><span>Third-Party Systems</span></div>
+            <div class="shot__img"><img src="assets/pitch/c1-new-notconfigured.png" alt="Third-party systems list, all Not Configured"></div>
+            <figcaption class="shot__cap">Every system shows its status up front.</figcaption>
+          </figure>
+          <figure class="shot anim" style="--i:4">
+            <div class="shot__bar"><i></i><i></i><i></i><span>TaxFactory · Credentials</span></div>
+            <div class="shot__img"><img src="assets/pitch/c1-new-empty.png" alt="TaxFactory credentials, not configured"></div>
+            <figcaption class="shot__cap">Pre-loaded credentials, ready to activate.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10 · STATUS FLOW -->
+    <section class="slide" aria-label="Status flow">
+      <div class="slide__inner slide__inner--wide">
+        <div class="head">
+          <p class="kicker anim" style="--i:0">Case 01 · Feedback</p>
+          <h2 class="s-title anim" style="--i:1">Status you can trust</h2>
+        </div>
+        <ol class="flow">
+          <li class="anim" style="--i:2">
+            <span class="flow__status st-warn">Not Configured</span>
+            <h3>The gate is open</h3>
+            <p>Nothing is activated yet — payroll stays blocked and the user knows exactly why.</p>
+          </li>
+          <li class="anim" style="--i:3">
+            <span class="flow__status st-mid">Maintained</span>
+            <h3>Saved &amp; ready</h3>
+            <p>Credentials are saved and validated (Saved / Not Saved per version), awaiting activation.</p>
+          </li>
+          <li class="anim" style="--i:4">
+            <span class="flow__status st-ok">Configured</span>
+            <h3>Live &amp; unblocked</h3>
+            <p>An active credential is live — payroll is unblocked and ready to use.</p>
+          </li>
+        </ol>
+        <div class="shots shots--2" style="margin-top:1.4rem">
+          <figure class="shot anim" style="--i:5">
+            <div class="shot__bar"><i></i><i></i><i></i><span>Status · Maintained</span></div>
+            <div class="shot__img"><img src="assets/pitch/c1-new-maintained.png" alt="TaxFactory status Maintained, credential saved"></div>
+            <figcaption class="shot__cap">"Credential saved" — explicit confirmation.</figcaption>
+          </figure>
+          <figure class="shot anim" style="--i:6">
+            <div class="shot__bar"><i></i><i></i><i></i><span>Status · Configured</span></div>
+            <div class="shot__img"><img src="assets/pitch/c1-new-configured.png" alt="TaxFactory status Configured, credential activated"></div>
+            <figcaption class="shot__cap">"Credential activated" — the toggle is on.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11 · SAFETY & TRACEABILITY -->
+    <section class="slide" aria-label="Safety and traceability">
+      <div class="slide__inner slide__inner--wide">
+        <div class="head">
+          <p class="kicker anim" style="--i:0">Case 01 · Trust &amp; audit</p>
+          <h2 class="s-title anim" style="--i:1">Safe changes, full traceability</h2>
+          <p class="s-lede anim" style="--i:2">A confirmation guards activation — switching one credential on deactivates the previous — and an activation log records every version and timestamp.</p>
+        </div>
+        <div class="shots shots--2">
+          <figure class="shot anim" style="--i:3">
+            <div class="shot__bar"><i></i><i></i><i></i><span>Confirmation</span></div>
+            <div class="shot__img"><img src="assets/pitch/c1-new-warning.png" alt="Warning: activating this credential deactivates the previous one"></div>
+            <figcaption class="shot__cap">No silent changes — the user confirms.</figcaption>
+          </figure>
+          <figure class="shot anim" style="--i:4">
+            <div class="shot__bar"><i></i><i></i><i></i><span>Activation Log</span></div>
+            <div class="shot__img"><img src="assets/pitch/c1-new-log.png" alt="Activation log with versions and timestamps"></div>
+            <figcaption class="shot__cap">Every activation is versioned and timestamped.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12 · OUTCOME -->
+    <section class="slide" aria-label="Outcome case 1">
+      <div class="slide__inner slide__inner--wide">
+        <div class="head">
+          <p class="kicker anim" style="--i:0">Case 01 · Outcome</p>
+          <h2 class="s-title anim" style="--i:1">A guided, discoverable setup</h2>
+          <p class="s-lede anim" style="--i:2">First-time logins are unblocked and administrators feel confident at every step — all consistent with existing SuccessFactors patterns.</p>
+        </div>
+        <div class="cards">
+          <div class="tile anim" style="--i:3">
+            <div class="tile__icon">➜</div>
+            <h3>Unblocked first login</h3>
+            <p>A predictable, guided place to configure credentials before payroll begins.</p>
+          </div>
+          <div class="tile anim" style="--i:4">
+            <div class="tile__icon">◉</div>
+            <h3>Status you can trust</h3>
+            <p>Explicit progression from Maintained to Configured, with clear feedback.</p>
+          </div>
+          <div class="tile anim" style="--i:5">
+            <div class="tile__icon">🗎</div>
+            <h3>Built for audit</h3>
+            <p>An activation log for full traceability of every change.</p>
+          </div>
+        </div>
+        <p class="s-note anim" style="--i:6;margin-top:1.4rem">Shipped: the design moved from Figma into active development.</p>
+      </div>
+    </section>
+
+    <!-- 13 · WHY THIS CASE -->
+    <section class="slide" aria-label="Why this case matters">
+      <div class="slide__inner slide__inner--wide">
+        <div class="head">
+          <p class="kicker anim" style="--i:0">Case 01 · Reflection</p>
+          <h2 class="s-title anim" style="--i:1">Why this case matters to me</h2>
+        </div>
+        <div class="cards">
+          <div class="tile anim" style="--i:2">
+            <div class="tile__icon">✦</div>
+            <h3>Zero to one</h3>
+            <p>I took a screen from nothing to shipped. Seeing what I designed being built was deeply rewarding.</p>
+          </div>
+          <div class="tile anim" style="--i:3">
+            <div class="tile__icon">⇄</div>
+            <h3>Cross-functional</h3>
+            <p>It spanned many stakeholders — including partners outside SAP — and sharpened how I collaborate with developers.</p>
+          </div>
+          <div class="tile anim" style="--i:4">
+            <div class="tile__icon">✓</div>
+            <h3>Design into quality</h3>
+            <p>Mentored by my colleagues, I ran the UX implementation review against Figma and filed bugs and review PRs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 14 · CASE 2 DIVIDER -->
+    <section class="slide slide--glow" data-section aria-label="Case 2">
+      <div class="slide__inner divider">
+        <div class="divider__num anim" style="--i:0">02</div>
+        <h2 class="divider__title anim" style="--i:1">Minha Jornada Platform</h2>
+        <p class="divider__sub anim" style="--i:2">AIESEC Brazil · End-to-end journey design</p>
+        <p class="anim" style="--i:3;margin-top:1.3rem"><span class="badge">✦ 100% AI-assisted design</span></p>
+      </div>
+    </section>
+
+    <!-- 15 · OVERVIEW / PROBLEM -->
+    <section class="slide" aria-label="Overview case 2">
+      <div class="slide__inner slide__inner--wide">
+        <div class="split">
+          <div class="split__text">
+            <p class="kicker anim" style="--i:0">Case 02 · Overview</p>
+            <h2 class="s-title anim" style="--i:1">A journey with no map</h2>
+            <p class="s-lede anim" style="--i:2">Minha Jornada helps exchange participants (EPs) and managers navigate the full AIESEC exchange journey in Brazil — a process that was fragmented and hard to follow.</p>
+          </div>
+          <div class="split__media">
+            <div class="tile anim" style="--i:3">
+              <span class="tile__eyebrow">The problem</span>
+              <h3>Fragmented &amp; invisible</h3>
+              <ul>
+                <li>No end-to-end visibility or structure across the process.</li>
+                <li>Participants felt uncertain about progress and next steps.</li>
+                <li>Managers struggled to track engagement and status.</li>
+                <li>Critical info scattered across spreadsheets, chats and tools.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 16 · USER RESEARCH (post-its) -->
+    <section class="slide" aria-label="User research">
+      <div class="slide__inner slide__inner--wide">
+        <div class="head">
+          <p class="kicker anim" style="--i:0">Case 02 · Discovery</p>
+          <h2 class="s-title anim" style="--i:1">Listening first: 6 conversations</h2>
+          <p class="s-lede anim" style="--i:2">Before designing, I ran in-depth interviews with exchange participants and CX managers, then affinity-mapped the pain points.</p>
+        </div>
+        <div class="postits">
+          <div class="postit postit--y anim" style="--i:3">
+            <p>"I never knew what the next step was. I kept messaging my buddy on WhatsApp asking 'and now?'"</p>
+            <p class="postit__who">Larissa, 21 · <span class="postit__role">EP, Global Volunteer</span></p>
+          </div>
+          <div class="postit postit--p anim" style="--i:4">
+            <p>"My documents were in three different Drives. I re-sent the same passport photo four times."</p>
+            <p class="postit__who">Rafael, 23 · <span class="postit__role">EP, Global Talent</span></p>
+          </div>
+          <div class="postit postit--b anim" style="--i:5">
+            <p>"I almost missed a deadline because the info was buried in a spreadsheet I didn't know existed."</p>
+            <p class="postit__who">Marina, 20 · <span class="postit__role">EP, Global Volunteer</span></p>
+          </div>
+          <div class="postit postit--g anim" style="--i:6">
+            <p>"I felt alone. There was no sense of progress — no 'you're 60% there'."</p>
+            <p class="postit__who">Bruno, 22 · <span class="postit__role">EP, Global Talent</span></p>
+          </div>
+          <div class="postit postit--o anim" style="--i:7">
+            <p>"I manage 15 EPs and track everything by hand. I honestly can't tell who's stuck."</p>
+            <p class="postit__who">Camila, 24 · <span class="postit__role">Manager CX</span></p>
+          </div>
+          <div class="postit postit--v anim" style="--i:8">
+            <p>"When someone drops out, I usually find out too late. There's no early warning."</p>
+            <p class="postit__who">Thiago, 25 · <span class="postit__role">Manager CX</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 17 · SYNTHESIS -->
+    <section class="slide" aria-label="Synthesis">
+      <div class="slide__inner slide__inner--wide">
+        <div class="head">
+          <p class="kicker anim" style="--i:0">Case 02 · Synthesis</p>
+          <h2 class="s-title anim" style="--i:1">What we heard → what to build</h2>
+        </div>
+        <div class="insights">
+          <div class="insight anim" style="--i:2"><span class="insight__n">01</span><div><h3>Show me where I am</h3><p>A clear sense of progress and the next step, end to end.</p></div></div>
+          <div class="insight anim" style="--i:3"><span class="insight__n">02</span><div><h3>One source of truth</h3><p>Documents and information in one place — not five.</p></div></div>
+          <div class="insight anim" style="--i:4"><span class="insight__n">03</span><div><h3>Warn me in time</h3><p>Proactive alerts before deadlines, not after they pass.</p></div></div>
+          <div class="insight anim" style="--i:5"><span class="insight__n">04</span><div><h3>A cockpit for managers</h3><p>Pipeline, compliance and risk visible at a glance.</p></div></div>
+          <div class="insight anim" style="--i:6"><span class="insight__n">05</span><div><h3>Keep me motivated</h3><p>Milestones and recognition to sustain engagement.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 18 · SOLUTION / ROLES -->
+    <section class="slide" aria-label="Solution">
+      <div class="slide__inner slide__inner--wide">
+        <div class="head">
+          <p class="kicker anim" style="--i:0">Case 02 · Solution</p>
+          <h2 class="s-title anim" style="--i:1">One guided journey hub</h2>
+          <p class="s-lede anim" style="--i:2">Minha Jornada replaces a spreadsheet-driven process with a single platform that adapts to each role — one shared, end-to-end view of the exchange.</p>
+        </div>
+        <div class="roles">
+          <div class="role anim" style="--i:3">
+            <div class="role__top"><span class="role__ic">✈</span><div><span class="role__eyebrow">Exchange Participant</span><h3>A step-by-step path</h3></div></div>
+            <p>A clear, guided route through the whole exchange, with progress always visible.</p>
+            <ul class="chips"><li>Personal journey</li><li>Checklist per stage</li><li>Badges &amp; XP</li><li>Messages from CX</li></ul>
+          </div>
+          <div class="role anim" style="--i:4">
+            <div class="role__top"><span class="role__ic">📊</span><div><span class="role__eyebrow">Manager CX</span><h3>An operational cockpit</h3></div></div>
+            <p>Track pipeline, compliance and exactly what needs attention — all in one place.</p>
+            <ul class="chips"><li>Full pipeline</li><li>Stage view</li><li>Automatic alerts</li><li>Actions per student</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 19 · JOURNEY HUB (landing) -->
+    <section class="slide" aria-label="Journey hub">
+      <div class="slide__inner slide__inner--wide">
+        <div class="split split--reverse">
+          <div class="split__media">
+            <figure class="shot anim" style="--i:3">
+              <div class="shot__bar"><i></i><i></i><i></i><span>Minha Jornada · Participant home</span></div>
+              <div class="shot__img"><img src="assets/pitch/c2-landing.png" alt="Minha Jornada landing / participant home" style="max-height:58vh"></div>
+            </figure>
+          </div>
+          <div class="split__text">
+            <p class="kicker anim" style="--i:0">Case 02 · Hi-fi</p>
+            <h2 class="s-title anim" style="--i:1">The journey hub</h2>
+            <ul class="bullets">
+              <li class="anim" style="--i:2"><strong>Clear hero &amp; CTA</strong> — "Your exchange starts before departure."</li>
+              <li class="anim" style="--i:3"><strong>What's on the platform</strong> — journey, educational content, support, documents.</li>
+              <li class="anim" style="--i:4"><strong>Role-based sections</strong> — tailored views for participants and managers.</li>
+              <li class="anim" style="--i:5"><strong>An 11-stage flow</strong> — from registration to completed departure.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 20 · ONBOARDING -->
+    <section class="slide" aria-label="Onboarding">
+      <div class="slide__inner slide__inner--wide">
+        <div class="head">
+          <p class="kicker anim" style="--i:0">Case 02 · Hi-fi</p>
+          <h2 class="s-title anim" style="--i:1">Guided onboarding</h2>
+          <p class="s-lede anim" style="--i:2">The platform adapts from the very first screen: pick your role, then sign in to the right view.</p>
+        </div>
+        <div class="shots shots--2">
+          <figure class="shot anim" style="--i:3">
+            <div class="shot__bar"><i></i><i></i><i></i><span>Step 1 · Select profile</span></div>
+            <div class="shot__img"><img src="assets/pitch/c2-role.png" alt="Role selection: participant or manager"></div>
+            <figcaption class="shot__cap">"Who are you in the journey?" — role selection.</figcaption>
+          </figure>
+          <figure class="shot anim" style="--i:4">
+            <div class="shot__bar"><i></i><i></i><i></i><span>Step 2 · Sign in</span></div>
+            <div class="shot__img"><img src="assets/pitch/c2-login.png" alt="Login screen scoped to the chosen role"></div>
+            <figcaption class="shot__cap">Credentials, scoped to the chosen role.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 21 · OUTCOME CASE 2 -->
+    <section class="slide" aria-label="Outcome case 2">
+      <div class="slide__inner slide__inner--wide">
+        <div class="head">
+          <p class="kicker anim" style="--i:0">Case 02 · Outcome</p>
+          <h2 class="s-title anim" style="--i:1">From scattered to guided</h2>
+        </div>
+        <div class="cards">
+          <div class="tile anim" style="--i:2">
+            <div class="tile__icon">◎</div>
+            <h3>One end-to-end view</h3>
+            <p>A single hub replaces scattered spreadsheets, chats and tools.</p>
+          </div>
+          <div class="tile anim" style="--i:3">
+            <div class="tile__icon">⇆</div>
+            <h3>Role-based clarity</h3>
+            <p>Participants see their path; managers get an operational cockpit.</p>
+          </div>
+          <div class="tile anim" style="--i:4">
+            <div class="tile__icon">✦</div>
+            <h3>Built fast with AI</h3>
+            <p>Designed and prototyped end-to-end with AI-assisted tools — IA to hi-fi in days.</p>
+          </div>
+        </div>
+        <p class="anim" style="--i:5;margin-top:1.4rem"><span class="badge">✦ 100% AI-assisted design (vibe coding)</span></p>
+      </div>
+    </section>
+
+    <!-- 22 · CLOSING -->
+    <section class="slide slide--glow" aria-label="Thank you">
+      <div class="slide__inner closing">
+        <p class="eyebrow anim" style="--i:0;justify-content:center">✦ Thank you</p>
+        <h2 class="closing__title anim" style="--i:1">Let's talk</h2>
+        <p class="s-lede anim" style="--i:2;margin-inline:auto;text-align:center">Bruna Demichei Nobre · UX Designer — SAP SuccessFactors Payroll (USA)</p>
+        <div class="closing__actions">
+          <a class="btn btn--primary anim" style="--i:3" href="https://www.linkedin.com/in/bruna-demichei-nobre" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="btn btn--ghost anim" style="--i:4" href="mailto:brunademichei01@gmail.com">Email me</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Bottom nav ===== -->
+  <div class="hint" id="hint">Use ← → · Space · F for fullscreen</div>
+  <nav class="deck__nav" aria-label="Slide navigation">
+    <button class="nav-arrow" id="prev" aria-label="Previous slide">←</button>
+    <div class="dots" id="dots"></div>
+    <span class="counter" id="counter">01 / 22</span>
+    <button class="nav-arrow" id="next" aria-label="Next slide">→</button>
+  </nav>
+
+  <script src="presentation.js"></script>
+</body>
+</html>
